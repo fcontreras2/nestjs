@@ -1,0 +1,21 @@
+[
+  {
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "solera7",
+    "database": "Mercadolibre",
+    "synchronize": true,
+    "bigNumberStrings": false,
+    "supportBigNumbers": true,
+    "logging": ["error"],
+    "entities": ["src/models/entities/*{.ts,.js}"],
+    "migrationsTableName": "migrations",
+    "migrations": ["src/migrations/.ts"],
+    "cli": {
+      "migrationsDir": "src/migrations",
+      "entitiesDir": "src/models/entities"
+    }
+  }
+]
