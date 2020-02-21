@@ -16,12 +16,12 @@ export class User {
   lastName: string;
 
   @Column({
-    default: new Date()
+    default: new Date('now')
   })
   createdAt: Date;
 
   @Column({
-    default: new Date()
+    default: new Date('now')
   })
   updatedAt:Date;
 }
